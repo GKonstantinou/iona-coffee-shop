@@ -1,0 +1,177 @@
+/* ===== Iona Coffee Shop stylesheet ===== */
+/* Iona University colors: maroon #6E1E3E and gold #E8A93C */
+
+/* Base + color palette. All fonts are sans-serif (no serifs). */
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #2b2320;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+h1, h2, h3 { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+h1 { margin: 0; font-size: 1.9rem; letter-spacing: 0.5px; }
+h2 { color: #6E1E3E; }
+h3 { color: #6E1E3E; margin-top: 28px; }
+a { color: #6E1E3E; }
+
+/* Header + navigation - CENTERED, Iona maroon */
+header {
+  background: #6E1E3E;
+  color: #ffffff;
+  padding: 18px 24px;
+  text-align: center;          /* centers the title */
+}
+header h1 { color: #ffffff; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;     /* centers the menu */
+  gap: 6px;
+  margin: 14px 0 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  padding: 8px 16px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border-radius: 6px;
+}
+nav a:hover { background: #8A2A4A; }         /* lighter maroon */
+nav a.active { background: #E8A93C; color: #4A1329; }   /* gold */
+
+/* Hero */
+#hero {
+  background: #f6f2f3;
+  padding: 28px;
+  border-radius: 10px;
+}
+
+/* Buttons */
+button {
+  font: inherit;
+  background: #6E1E3E;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover { background: #E8A93C; color: #4A1329; }   /* gold on hover */
+
+/* Slideshow */
+.slideshow { margin-top: 20px; }
+.slideshow img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+.slide-buttons { margin-top: 10px; }
+
+/* Special box */
+#special-box {
+  margin-top: 28px;
+  padding: 20px;
+  border: 1px solid #e2d7dc;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #e0d3d9;
+  padding: 10px 12px;
+  text-align: left;
+}
+thead th { background: #6E1E3E; color: #ffffff; }
+
+/* Gallery (CSS Grid) */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 10px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Forms */
+form { max-width: 480px; }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  font: inherit;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #c9b9c0;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+/* radios and checkboxes stay small and sit next to their label */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+fieldset {
+  border: 1px solid #c9b9c0;
+  border-radius: 6px;
+  margin: 0 0 12px;
+  padding: 10px 14px;
+}
+fieldset label { display: block; margin: 6px 0; }
+blockquote {
+  border-left: 4px solid #E8A93C;      /* gold accent */
+  margin: 20px 0;
+  padding: 6px 16px;
+  color: #4a3d34;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background: #6E1E3E;
+  color: #f0dfe6;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+}
+footer a { color: #E8A93C; }
+
+/* Contact page: center the heading, intro, and the form block,
+   but keep the labels and inputs left-aligned for readability */
+.contact { text-align: center; }
+.contact form { text-align: left; margin-left: auto; margin-right: auto; }
+
+/* Responsive: stack on small screens */
+@media (max-width: 600px) {
+  nav ul { flex-direction: column; align-items: center; }
+  .gallery { grid-template-columns: 1fr; }
+}
