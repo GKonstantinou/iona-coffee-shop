@@ -2,22 +2,23 @@
 
 Class demo site for **CS 142: Website Design** at Iona University.
 
-This is the practice website we built together in lab, step by step, using plain HTML, CSS, and JavaScript. It is a three-page site for a fictional campus coffee shop. Use it as a reference for your own work.
+This is the practice website we built together in lab, step by step, using plain HTML, CSS, and JavaScript. It is a three-page site for a fictional campus coffee shop, plus one JavaScript practice page. Use it as a reference for your own work.
 
 ## Live site
 
-Once GitHub Pages is turned on, the site is live at:
+The site is live at:
 
 https://gkonstantinou.github.io/iona-coffee-shop/
 
 ## What each file does
 
-- `index.html` - the Home page: headings, intro text, an image slideshow, and a "today's special" button.
-- `menu.html` - the Menu page: lists, a price table, and an image gallery.
-- `contact.html` - the Contact page: a form with labels, a dropdown, radio buttons, a checkbox, and validation.
-- `style.css` - all the styling: the Iona maroon and gold colors, the fonts, the navigation bar, the layout, and the rule that adjusts the page for small screens.
-- `main.js` - the JavaScript: the welcome message, the random daily special, the slideshow, and the form validation.
-- `images/` - the pictures used on the pages.
+- `index.html` - the Home page: headings, intro text, an image slideshow with Previous and Next buttons, and a customer quote.
+- `menu.html` - the Menu page: a list, a price table, an image gallery, and a "Back to the top" link.
+- `contact.html` - the Contact page: a form with labels, text, email, and phone fields, a dropdown, radio buttons, a checkbox, and required fields.
+- `myjspage.html` - the JavaScript practice page: changes text and swaps a picture when you click a button.
+- `styles.css` - all the styling: the Iona maroon and gold colors, the fonts, the navigation bar, the layout, the image gallery, the form and buttons, and the rule that adjusts the page for small screens.
+- `myscript.js` - the JavaScript: the slideshow code, plus the practice exercises from class (variables, prompts, if/else, arrays, and functions), which are kept inside a comment so they do not run.
+- `images/` - the pictures used on the pages, plus the site icon (`favicon.ico`).
 
 ## How it was built
 
