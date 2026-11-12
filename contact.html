@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+  <header>
+    <h1>Iona Coffee Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact">
+    <h2>Contact Us</h2>
+    <p>Questions, catering, or feedback? Send us a note.</p>
+    <p><strong>Hours:</strong> Mon-Fri, 7am-4pm &nbsp;|&nbsp; 123 North Avenue, New Rochelle, NY</p>
+
+    <form action="https://formspree.io/f/yourID" method="POST">
+      <p>
+        <label for="name">Name</label><br>
+        <input id="name" name="name"
+               type="text" required>
+      </p>
+      <p>
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email" required>
+      </p>
+      <p>
+        <label for="phone">Phone</label><br>
+        <input id="phone" name="phone" type="tel">
+      </p>
+      <p>
+        <label for="reason">Reason for contact</label><br>
+        <select id="reason" name="reason">
+          <option>General question</option>
+          <option>Catering</option>
+          <option>Feedback</option>
+        </select>
+      </p>
+      <p>Preferred contact method</p>
+      <label>
+        <input type="radio" name="method"
+               value="email" checked> Email
+      </label><br>
+      <label>
+        <input type="radio" name="method"
+               value="phone"> Phone
+      </label>
+      <p>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="subscribe"> Sign me up for
+          the weekly specials email
+        </label>
+      </p>
+      <p><button type="submit">Send message</button></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>123 North Avenue, New Rochelle, NY 10804</p>
+    <p>&copy; Georgia Konstantinou - <a href="mailto:gkonstantinou@iona.edu">Email Me</a></p>
+  </footer>
+</body>
+
+</html>
